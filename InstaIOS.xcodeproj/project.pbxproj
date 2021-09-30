@@ -9,21 +9,25 @@
 /* Begin PBXBuildFile section */
 		8323906426FD52C40008E103 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8323906326FD52C40008E103 /* AppDelegate.swift */; };
 		8323906626FD52C40008E103 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8323906526FD52C40008E103 /* SceneDelegate.swift */; };
-		8323906826FD52C40008E103 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8323906726FD52C40008E103 /* ViewController.swift */; };
 		8323906B26FD52C40008E103 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8323906926FD52C40008E103 /* Main.storyboard */; };
 		8323906D26FD52C50008E103 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8323906C26FD52C50008E103 /* Assets.xcassets */; };
 		8323907026FD52C50008E103 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8323906E26FD52C50008E103 /* LaunchScreen.storyboard */; };
+		8323907A26FD546E0008E103 /* FeedTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8323907826FD546E0008E103 /* FeedTableViewCell.swift */; };
+		8323907B26FD546E0008E103 /* FeedTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8323907926FD546E0008E103 /* FeedTableViewCell.xib */; };
+		8323907E26FD62680008E103 /* FeedTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8323907D26FD62680008E103 /* FeedTableViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		8323906026FD52C40008E103 /* InstaIOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = InstaIOS.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8323906326FD52C40008E103 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		8323906526FD52C40008E103 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		8323906726FD52C40008E103 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		8323906A26FD52C40008E103 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		8323906C26FD52C50008E103 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		8323906F26FD52C50008E103 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		8323907126FD52C50008E103 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8323907826FD546E0008E103 /* FeedTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedTableViewCell.swift; sourceTree = "<group>"; };
+		8323907926FD546E0008E103 /* FeedTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FeedTableViewCell.xib; sourceTree = "<group>"; };
+		8323907D26FD62680008E103 /* FeedTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedTableViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,15 +60,33 @@
 		8323906226FD52C40008E103 /* InstaIOS */ = {
 			isa = PBXGroup;
 			children = (
+				8323907C26FD62490008E103 /* ViewController */,
+				8323907726FD54100008E103 /* View */,
 				8323906326FD52C40008E103 /* AppDelegate.swift */,
 				8323906526FD52C40008E103 /* SceneDelegate.swift */,
-				8323906726FD52C40008E103 /* ViewController.swift */,
-				8323906926FD52C40008E103 /* Main.storyboard */,
 				8323906C26FD52C50008E103 /* Assets.xcassets */,
 				8323906E26FD52C50008E103 /* LaunchScreen.storyboard */,
 				8323907126FD52C50008E103 /* Info.plist */,
 			);
 			path = InstaIOS;
+			sourceTree = "<group>";
+		};
+		8323907726FD54100008E103 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				8323906926FD52C40008E103 /* Main.storyboard */,
+				8323907826FD546E0008E103 /* FeedTableViewCell.swift */,
+				8323907926FD546E0008E103 /* FeedTableViewCell.xib */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		8323907C26FD62490008E103 /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				8323907D26FD62680008E103 /* FeedTableViewController.swift */,
+			);
+			path = ViewController;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -126,6 +148,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				8323907026FD52C50008E103 /* LaunchScreen.storyboard in Resources */,
+				8323907B26FD546E0008E103 /* FeedTableViewCell.xib in Resources */,
 				8323906D26FD52C50008E103 /* Assets.xcassets in Resources */,
 				8323906B26FD52C40008E103 /* Main.storyboard in Resources */,
 			);
@@ -138,9 +161,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8323906826FD52C40008E103 /* ViewController.swift in Sources */,
 				8323906426FD52C40008E103 /* AppDelegate.swift in Sources */,
+				8323907A26FD546E0008E103 /* FeedTableViewCell.swift in Sources */,
 				8323906626FD52C40008E103 /* SceneDelegate.swift in Sources */,
+				8323907E26FD62680008E103 /* FeedTableViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
